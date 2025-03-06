@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diron's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/415315bfa6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <div id="logo"></div>
+            <nav><img src="images/Diron logo.png" class="logo"></nav>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer / Frontend Developer</p>
+
+                <h1>Hi, I'm <span>Diron</span><br>From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Diron png 2.png" alt="Diron">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Diron, a passionate social media marketer and software engineering student. With a keen eye for digital marketing, graphic design, and branding, I help businesses boost their online presence...</p>
+                    
+                    <!-- Tab Links -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    
+                    <!-- Tab Contents with Lowercase IDs -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <br>
+                            <li><span>Web Development</span><br>Building responsive websites</li>
+                            <br>
+                            <li><span>App Development</span><br>Developing mobile applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mtec Lanka</span><br>Social Media Marketing & Sales</li>
+                            <br>
+                            <li><span>Tekiro Tools</span><br>Marketing & Promotions</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Colombo Central Hindu College</span><br>O/L - 2019 <br> A/L - 2022</li>
+                            <br>
+                            <li><span>BCAS</span><br>Studying Software Engineering</li>
+                            <br>
+                            <li><span>Self-Learning</span><br>Exploring Web Development & Digital Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Social Media Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/diron photography.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>I have a passion for photography as a side interest. While it's not my main focus, I've developed this hobby by completing various photoshoots including events and portraits. I enjoy pursuing this creative outlet in my free time and have considered offering freelance photography services. Though photography remains secondary to my primary career path, it provides me with artistic fulfillment and potential additional income through occasional freelance work.</p>
+                    </div>
+                </div>   
+                <div class="work">
+                    <img src="images/web 1.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>As a proficient web developer, I possess comprehensive knowledge of front-end and back-end technologies that enable me to create responsive, user-friendly websites. My skill set encompasses HTML, CSS, and JavaScript, along with experience in popular frameworks and libraries. I can efficiently translate design concepts into functional websites, implement database integration, and ensure cross-browser compatibility. Having worked on various projects, I've developed strong problem-solving abilities and attention to detail. My continuous learning approach keeps me updated with emerging technologies and best practices, allowing me to deliver modern, optimized web solutions that meet client requirements and industry standards.</p>
+                    </div>
+                </div>   
+                <div class="work">
+                    <img src="images/marketing.jpg" alt="Work">
+                    <div class="layer">
+                        <h3>Marketing Campaign</h3>
+                        <p>Currently, I serve on the marketing team at M-Tec Lanka, Sri Lanka's premier distributor of professional tools, representing the international brand Tekiro. As a key team member, I drive Tekiro's market presence through comprehensive marketing strategies spanning both traditional and digital channels. My responsibilities include creating compelling offline materials like leaflets and posters, while simultaneously managing our digital footprint across Facebook and Instagram through Meta Business tools. This multifaceted approach allows me to effectively showcase Tekiro's quality and innovation to Sri Lankan professionals and DIY enthusiasts, contributing to our growing market share and brand recognition.</p>
+                    </div>
+                </div>  
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> dironjdr@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0770418691</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/diron_jdr?igsh=NTV3NDJpeDN3d2N1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/diron-j"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Diron ' Cv (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> Copyright 2025 Diron J</p>
+    </footer>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        function openTab(tabName) {
+            var contents = document.querySelectorAll('.tab-contents');
+            var links = document.querySelectorAll('.tab-links');
+            
+            // Hide all tab contents
+            contents.forEach(function(content) {
+                content.classList.remove('active-tab');
+            });
+
+            // Remove active link class
+            links.forEach(function(link) {
+                link.classList.remove('active-link');
+            });
+
+            // Show the selected tab content and make the clicked tab active
+            document.getElementById(tabName).classList.add('active-tab');
+            document.querySelector(`.tab-links[onclick="openTab('${tabName}')"]`).classList.add('active-link');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLUt8qkgtofC1C51zX_jsuU8fsVB8G1UtEnLg1u3q6uK-fMm0OgX8NoZOUqaqKNqz2/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => {
+                    console.error('Error!', error.message)
+                    msg.innerHTML = "Failed to send message. Please try again."
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+        })
+    </script>   
+</body>
+</html>
